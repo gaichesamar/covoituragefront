@@ -1,0 +1,205 @@
+
+
+
+
+<!--Wrapper Content Start
+<div class="tj-wrapper">
+
+
+    <ul class="breadcrumb-list">
+      <h2 class="text-center mb-2"> <div class="tj-heading-style" style="margin-top: 5px; color: #ADD8E6">
+        <h2> Vous êtes un Passager</h2>
+      </div></h2>
+
+    </ul>
+  -->
+
+  <!--<section class="tj-login">-->
+
+
+  <!--</section>-->
+  <!--Login Section End
+
+
+  <div class="container">
+    Tabs Nav Start
+
+    <div class="row">
+      <div class="col-md-12 col-sm-12">
+        <div class="tab-content">
+         Login Tabs Content Start
+          <div class="tab-pane active">
+
+
+            <div class="col-lg-6 mx-auto">
+
+
+
+              <form [formGroup]="registerForm" (ngSubmit)="inscrit()">
+
+                &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <div class="row">
+                  <div class="col-sm-6 form-group">
+                    <label > Nom</label>
+                    <input type="text" class="form-control"  formControlName="username"   [ngClass]="{ 'is-invalid': submitted && f.username.errors }" />
+
+                    <div *ngIf="submitted && f.username.errors" class="invalid-feedback">
+                      <div *ngIf="f.username.errors.required" >Nom d'utilisateur obligatoire</div>
+                    </div>
+                  </div>
+
+
+
+
+                  <div class="col-sm-6 form-group">
+                    <label > Prenom </label>
+                    <input type="text"   formControlName="lastName" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.lastName.errors }" />
+                    <div *ngIf="submitted && f.lastName.errors" class="invalid-feedback">
+                      <div *ngIf="f.lastName.errors.required"  >Prenom Obligatoire</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-6 form-group">
+                    <label >Genre </label>
+
+
+                    <select   formControlName="genre"    class="form-control" [ngClass]="{ 'is-invalid': submitted && f.genre.errors }" >
+                      <option>Homme</option>
+                      <option>Femme</option>
+                    </select>
+                    <div *ngIf="submitted && f.genre.errors" class="invalid-feedback">
+                      <div *ngIf="f.genre.errors.required"  >Il faut indiquer votre genre</div>
+                    </div>
+
+                  </div>
+                  <div class="col-sm-6 form-group">
+
+                    <label>Telphone </label>
+
+                    <input type="number"  formControlName="tel" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.tel.errors }" />
+                    <div *ngIf="submitted && f.tel.errors" class="invalid-feedback">
+                      <div *ngIf="f.tel.errors.required"  >Telephone Obligatoire</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-6 form-group">
+
+
+                    <label>Date de Naissance</label>
+
+                 <ejs-datepicker id='datepicker' placeholder='Select a date' [value]='value' [min]='minDate' [max]='maxDate' formControlName="birthdate"  >
+
+                    </ejs-datepicker> 
+                  </div>
+
+
+                  <div class="col-sm-6 form-group">
+                    <label> Email </label>
+                    <input type="text"  formControlName="email" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.email.errors }" />
+                    <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+                      <div *ngIf="f.email.errors.required">Email Obligatoire</div>
+                      <div *ngIf="f.email.errors.email"  >Email  incorrect</div>
+                    </div>
+
+                  </div>
+
+                  </div>
+
+                <div class="row">
+                  <div class="col-sm-6 form-group">
+                    <label> Mot de passe</label>
+                    <input type="password"  formControlName="password" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.password.errors }" />
+                    <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+                      <div *ngIf="f.password.errors.required"  >Mot de passe obligatoire</div>
+                      <div *ngIf="f.password.errors.minlength"  >Mot de passe trop court(min 6 caractere)</div>
+                    </div>
+                  </div>
+
+
+
+
+
+                <div class="col-sm-6 form-group">
+                  <label>Confirmer mot de passe</label>
+                  <input type="password" formControlName="confirmedPassword" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.confirmedPassword.errors }" />
+
+                  <div *ngIf="submitted && f.confirmedPassword.errors" class="invalid-feedback">
+                    <div *ngIf="f.confirmedPassword.errors.required"  >confirmation mot de passe Obligatoire</div>
+                    <div *ngIf="f.confirmedPassword.errors.mustMatch"  >Le deux mot de passe saisie ne sont pas identique</div>
+                  </div>
+                </div>
+                </div>
+
+             <div class="form-group d-flex justify-content-center">-->
+                  <!--<div class="form-check form-check-flat mt-2">-->
+                    <!--<label class="form-check-label">-->
+                      <!--<input type="checkbox" class="form-check-input" checked> I agree to the terms-->
+                    <!--</label>-->
+                  <!--</div>-->
+                <!--</div>
+
+                &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;
+
+                <div class="form-group" >
+                  <button class="btn btn-primary submit-btn btn-block" href="register" >Inscription</button>
+                </div>
+
+
+              </form>
+
+            </div>
+          </div>
+
+          Login Tabs Content Start
+          <div class="tab-pane active" id="login">
+
+            <div class="col-lg-6 mx-auto">
+
+              <img src='../../../assets/images/en-tête-de-bannière-concept-service-covoiturage-l-homme-d-affaires-avec-le-smartphone-loue-une-voiture-dans-la-rue-par-139976830.jpg'  width="600" height="600"  >
+            </div>
+
+
+          </div></div></div>
+    </div>
+  </div>
+
+
+
+</div>
+-->

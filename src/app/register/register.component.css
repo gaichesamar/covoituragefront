@@ -1,0 +1,33 @@
+.ride-conducteur-buttom{
+  border: 1px solid navy;
+  border-radius: 8px;
+  background: navy;
+  margin-bottom:inherit;
+  position: relative;
+  left: 250px;
+
+}
+.ride-conducteur-buttom a{
+  color: #FFFFFF !important;
+    padding: 48px !important;
+    text-align: center !important;
+    width: 100% !important;
+    font-size: 20px !important;
+    font-weight: bold !important;
+    position: relative;
+    right: 10px;
+}
+.ride-passager-buttom{
+  border: 1px solid #337ab7;
+  border-radius: 8px;
+  background: #337ab7;
+  margin-bottom:inherit;
+}
+.ride-passager-buttom a{
+  color: #FFFFFF !important;
+  padding:200px !important;
+  text-align: center !important;
+  width: 100% !important;
+  font-size: 20px !important;
+  font-weight: bold !important;
+}

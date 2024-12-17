@@ -1,0 +1,53 @@
+    
+    <div class='container-fluid mt-5 mb-5 p-0'>
+      <div class="inner row d-flex justify-content-center">
+          <div class="card col-md-5 col-12 box1">
+              <div class="card-content">
+                  <div class="card-header">
+                      <div class="heading mb-3"> PAYMENT METHOD </div>
+                      <div class="sub-heading row text-center m-0">
+                          <div class="col-6 col-md-6 sub-heading1">By Credit Card</div>
+                        </div>
+                  </div>
+                  <div class="card-body">
+                      <p><small> You choose the method of payment with a credit card. Enter your payment details </small></p>
+                    
+                      <div class="credit d-block mt-5 mx-auto"> <img  src="../../../assets/images/payement.png" width="200px"> <img class="back" src="../../../assets/images/pay2.png" width="200px"> </div>
+                  </div>
+              </div>
+          </div>
+          <div class="card col-md-5 col-12 box2">
+              <div class="card-content">
+                  <div class="card-header box2-head">
+                      <div class="heading2"> PAYMENT DETAILS </div>
+                  </div>
+                  <div class="card-body col-10 offset-1">
+                    <form >
+                      <div class="form-group">
+                        
+                        <input type="number" id="price" class="form-control" formControlName="price" placeholder="Prix"/>
+                      </div>
+                      
+
+                      <div class="form-group">
+                        <label for="currency">Devise</label>
+                        <input type="text" id="currency" name="currency" formControlName="currency" placeholder="USD/EUR">
+                          
+                      </div>
+                    
+                      <div class="form-group">
+                        
+                        <input type="text" id="intent" class="form-control" formControlName="intent" placeholder="Intent"/>
+                      </div>
+                      <div class="form-group">
+                        
+                        <input type="text" id="description" class="form-control" formControlName="description" placeholder="Description"/>
+                      </div>
+                      <button type="submit" class="btn btn-primary">Payer</button>
+                    </form>
+                  </div>
+                  
+              </div>
+          </div>
+      </div>
+    </div>

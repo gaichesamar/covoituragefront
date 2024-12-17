@@ -1,0 +1,1163 @@
+@media screen and (max-width: 1024px) and (min-width: 980px){
+	nav {
+	    width: 58%;
+	}
+	.space{padding: 60px 0;}
+	.space.no-top{padding-top: 0;}
+	.space.no-bottom{padding-bottom: 0;}
+	.space.no-space{padding: 0;}
+	p{font-size: 14px;}
+	.cola-submition .theme-btn{padding: 11px;}
+	.cola-submition > ul > li{margin: 0;}
+	.colaroute-search > form input{width: 200px; font-size: 15px;}
+	.cola-services > li{width: 49%;}
+	.colla-select{padding: 16px 11px;}
+	.cola-heading > h1{font-size: 34px;}
+	.cola-heading > h5{font-size: 18px;}
+	.heading > h2 {font-size: 28px;}
+	.heading > h5{font-size: 20px;}
+	.heading{margin-bottom: 45px;}
+	.pickup-time .date-n-time > p{width: 100%;}
+	.funfact > span{
+		height: 68px;
+		line-height: 68px;
+		width: 68px;
+	}
+	.funfact > span i{font-size: 28px;}
+	.owner-info > span{font-size: 19px;}
+	.colla-apps > li a{padding:0 17px 2px;}
+	.widget-title > h4{font-size: 19px;}
+	.list-style > li{font-size: 15px;}
+	.login-area{width: 32%;}
+	.time-info{width: 25%;}
+	.step{width: 380px;}
+	.cola-features > li{width: 100%;}
+	.profile-dp .theme-btn{font-size: 12px;}
+	.edit-profile .cola-form label{font-size: 12px;}
+	.share-embed > h4{font-size: 18px;}
+	.location > p input{width: 200px;}
+	.date-n-time > p input{width: 157px;}
+	.cars-list > figure img{width: 207px; max-width: 207px;}
+	.car-inf{width: 100%;}
+	.cars-list{padding: 10px;}
+	.fees > span, .fees > p{max-width: 90%;}
+	.nav.nav-pills > li a h1{
+		font-size: 14px;
+		height: 50px;
+		line-height: 47px;
+		width: 50px;
+	}
+		.tag.bottom{bottom: 50px; top: auto;}
+		.car-specific > p{font-size: 13px;}
+	.check-plan {
+		padding-bottom: 60px;
+		padding-top: 0px;
+	}
+	.serviz-meta{width: 80%;}
+	.points .services-meta{width: 88%;}
+	.note-box.big {
+		width: 100%;
+	}
+	form input, form textarea{font-size: 13px;}
+	.log-with-fb > a{width: 100%;}
+	.rides-meta > h4 {
+		font-size: 20px;
+	}
+	.space-70 {
+		padding: 50px 0;
+	}
+	.kola-met {
+		max-width: 70%;
+		width: 70%;
+	}
+	.kola-met > span {
+		color: #8e8e8e;
+		display: inline-block;
+		font-size: 14px;
+		padding-top: 6px;
+	}
+	.rides-meta > span{font-size: 15px;}
+	.ride-request > ul li span{width: 40%;}
+	.nav.nav-tabs.profile-btn li a {
+		padding: 10px 28px;
+	}
+
+	
+	
+
+}
+
+
+
+/*--- width 980px ---*/
+@media screen and (max-width: 980px){
+	header, .header-top{display: none;}
+	.responsive-header{display: block}	
+	.space{padding: 60px 0;}
+	.space.no-top{padding-top: 0;}
+	.space.no-bottom{padding-bottom: 0;}
+	.space.no-space{padding: 0;}	
+	.heading{margin-bottom: 45px;}
+	.heading > h2{font-size: 30px;}
+	.cola-submition{padding:0 20px;}
+	.colaroute-search > form input{width: 145px; font-size: 15px;}
+	.colla-select{padding: 16px 11px;}
+	.cola-heading > h1{font-size: 34px;}
+	.cola-heading > h5{font-size: 18px;}
+	.ride-title > h3{font-size: 20px;}
+	.theme-btn{padding: 8px 10px; font-size: 14px;}
+	.ride-rent {margin-bottom: 30px;}
+	header .logo img {transform: scale(0.7);}
+	p{font-size: 14px;}
+	.services-meta > h4{font-size: 19px;}
+	.rent-meta > h4{font-size: 16px; max-width: 60%;}
+	.les-marg-20 {margin-bottom: 25px !important;}
+	.heading > h2 {
+		font-size: 25px;
+	}
+	.price{margin-top: 0; text-align: right;}
+	.funfact > span.counter{font-size: 22px;}
+	.funfact > h5{font-size: 14px; }
+	footer .widget{margin-top: 40px;}
+	footer .row > div:nth-child(1) .widget,
+	footer .row > div:nth-child(2) .widget{
+		margin-top: 0;
+	}
+	.login-area{width: 39%;}
+	.info-links > a, .info-links > span{font-size: 13px;}
+	.scroll {
+		max-height: unset;
+		overflow-y: unset;
+		position: relative;
+	}
+	.panel-title{font-size: 17px;}
+	.table-list > li{font-size: 16px;}
+	.faq-meta > h4, .cola-notice > h4{font-size: 20px;}
+	.top-area > h2{font-size: 30px;}
+
+	.step{width: 300px;}
+	.step::after{left: -37px;}
+	.step > p{line-height: 22px; font-size: 14px;}
+	.karaydar .step::after{right: -38px;}
+
+	.model-box {
+		padding: 40px 20px 20px;
+		width: 300px;
+	}
+	.model-box > h4 {
+		font-size: 22px;
+	}
+	.model-box > em {
+		font-size: 20px;
+	}
+	span.tag {
+		font-size: 12px;
+		padding: 5px 10px;
+	}
+	.head-meta > h4 {
+		font-size: 20px;
+	}
+	.cola-features > li{width: 49%;}
+	.request-box > span ins{font-size: 24px;}
+	.log-with-fb {
+		padding: 20px;
+	}
+	.log-with-fb > h4 {
+		font-size: 18px;
+	}
+	.log-with-fb > a {
+		width: 100%;
+	}
+	.progress-box{margin-top: 30px;}
+	.sidebar .progress-box{margin-top: 0;}
+	.check-plan {
+		padding-bottom: 50px;
+		padding-top: 50px;
+	}
+
+	.car-info > a {
+		font-size: 14px;
+		padding: 6px 10px;
+	}
+	.car-info > h4 {
+		font-size: 16px;
+	}
+	.car-list > figure {
+		max-width: 20%;
+		width: 20%;
+	}
+	.car-info {
+		padding-bottom: 20px;
+		padding-top: 20px;
+	}
+	.car-info > .delete-pro {
+		right: 5px;
+		top: -4px;
+	}
+	.colla-table table tbody tr td{font-size: 13px;}
+	.edit-profile .cola-form label{font-size: 12px;}
+	.info-box {
+		margin-bottom: 40px;
+	}
+	.referal-page > .row > div:last-child .info-box{margin-bottom: 0;}
+	.share-embed > h4 {
+		font-size: 18px;
+	}
+	.share-embed {
+		padding: 20px;
+	}
+	.invite-bymail > h4 {
+		font-size: 20px;
+	}
+	.price > span {
+		float: left;
+		text-align: left;
+	}
+	.remaing-widget {
+		margin-top: 20px;
+	}
+	.search-route .location > p {
+		width: 100%;
+	}
+	.search-route .location {
+		width: 30%;
+	}
+	.search-route .date-n-time {
+		margin-left: 45px;
+		vertical-align: top;
+		width: 40%;
+	}
+	.search-route .date-n-time > p input {
+		width: 100%;
+	}
+	.search-route .date-n-time > p {
+		margin-bottom: 26px;
+	}
+	.cola-page .date-n-time > p{width: 176px;}
+	.request-sending .theme-btn.long{padding: 7px 17px;}
+	.ride-request > span{margin-right: 20px; float: left;}
+	.search-route .theme-btn{font-size: 14px; padding: 8px 20px;}
+	.nav.nav-pills > li a h1{font-size: 20px; width: 50px; line-height: 50px;}
+	.nav-pills > li{font-size: 11px;}
+	.fees > span, .fees > p{max-width: 90%;}
+	.step-content{margin-top: 50px;}
+	.feature-meta > h1 {
+		font-size: 30px;
+	}
+	.feature-meta {
+		max-width: 70%;
+	}
+	.heading > h1 {
+		font-size: 28px;
+	}
+	.cola-services.points > li {
+		padding-right: 20px;
+	}
+	.profile-dp{margin-bottom: 30px;}
+	.space-70{padding: 30px;}
+	.daily-ride .row > div:last-child .ride-rent{margin-bottom: 0;}
+		
+	.featured-meta {
+		position: unset;
+	}
+	.colaroute-search > form input {
+		width: 230px;
+	}
+	.cola-services > li {
+		width: 48.8%;
+	}
+	.review-caro .owl-nav {
+		right: 0;
+	}
+	.review-face > div {
+		width: 61%;
+	}
+	.review-meta > p {
+		letter-spacing: -0.3px;
+	}	
+	.funfact {
+		text-align: center;
+	}
+	.fun-meta {
+		padding-left: 0;
+		width: 100%;
+	}
+	.fun-meta > h5 {
+		font-size: 16px;
+	}
+	.servize {
+		margin-left: 0;
+	}
+	.serviz-meta > span {
+		font-size: 14px;
+		line-height: 20px;
+	}
+	.serviz-meta > i {
+		font-size: 15px;
+	}
+	.serviz-meta {
+		width: 75%;
+	}
+	.servize > i {
+		font-size: 43px;
+		line-height: 44px;
+		vertical-align: top;
+	}
+	.verification > li{font-size: 12px;}
+	.sidebar.right{margin-top: 50px;}
+	.advertising-box figure img {
+		width: 100%;
+	}
+	.cola-head > p{float: left;}
+	.panel-title {
+		font-size: 15px;
+	}
+	.table-list > li {
+		font-size: 14px;
+	}
+	.mockup-right{bottom: 0;}
+	.points {
+		padding: 20px;
+	}
+	.points .services-meta {
+		width: 83%;
+	}
+	.profile-bg{padding-left: 0;}
+	.profile-dp .verification, .profile-dp .verification li {
+		display: block;
+		text-align: center;
+	}
+	.profile-dp .theme-btn {
+		float: none;
+		margin-left: 50px;
+	}
+	.cola-notice{padding: 40px 30px;}
+	.head-meta > p{margin-left: 10px;}
+	.cola-notice > span{padding-bottom: 24px;}
+	.note-box.big{width: 100%;}
+	.profile-dp .profile-links > li {
+		display: inline-block;
+		font-size: 14px;
+		margin: 0 15px;
+		width: auto;
+	}
+	.profile-links {
+		margin-top: 10px;
+	}
+	form input, form textarea, .cola-form > .row > div > i{font-size: 12px;}
+	
+.head-search .search-route .location {
+    vertical-align: middle;
+    width: 45%;
+}
+.head-search .search-route .date-n-time {
+    margin-left: 0;
+    vertical-align: middle;
+    width: 44%;
+}
+.search-route .date-n-time > p {
+    margin-bottom: 0;
+    width: 100%;
+}
+.head-search .search-route .location input {
+    width: 100%;
+}
+.head-search .search-route .theme-btn {
+    vertical-align: middle;
+}
+.search-route > form {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+}
+
+.rides-meta > h4 {
+    font-size: 20px;
+}
+.rides-meta > span {
+    font-size: 15px;
+}
+.car-inf > h5 {
+    font-size: 16px;
+}
+	.sidebar.right .note-box:last-child{margin-bottom: 0;}
+	.featured-area{padding: 0 15px;}
+
+
+
+
+}
+
+
+
+
+
+/*--- width 640px ---*/
+@media screen and (max-width: 640px){
+	header{display: none;}
+	.responsive-header{display: block}	
+	.space.no-top {padding-top: 0;}	
+	.space.no-bottom {padding-bottom: 0;}	
+	.container{padding: 0 15px;}	
+	.margin-top-30{ margin-top: 30px;}
+	.cola-services > li{width: 100%;}
+	.rider-meta > a{font-size: 13px;}
+	.rider-meta > p{font-size: 13px;}
+	.ride-title > a {
+		padding-top: 12px;
+		position: unset;
+		transform: translate(0px);
+	}
+	.heading > h2 {
+		font-size: 26px;
+	}
+	.serviz-meta {
+		width: 68%;
+	}
+	.heading > h5 {
+		font-size: 16px;
+	}
+	.space {
+		padding: 45px 0;
+	}
+	.latest-rentalz {
+		margin-bottom: 30px;
+	}
+	.funfact {
+		margin-bottom: 30px;
+	}
+	footer .row > div:last-child .widget {
+		margin-bottom: 0;
+	}
+	.latst-activity {
+		margin-top: 30px;
+	}
+	.info-links > a, .info-links > span {
+		margin-top: 0px;
+	}
+	.detail-head > h1{font-size: 20px;}
+	.featurez > li span {
+		display: inline-block;
+		vertical-align: middle;
+		width: 220px;
+	}
+	.cars-list > figure {
+		display: unset;
+		width: auto;
+	}
+	.cars-list > figure img {
+		margin-top: 25px;
+		max-width: unset;
+		width: 150px;
+	}
+	.car-inf {
+		padding: 20px 25px;
+	}
+	.table-list {
+		border-bottom: 1px solid #ccc;
+		margin-bottom: 30px;
+		padding-bottom: 20px;
+	}
+	.cola-notice{width: 100%;}
+	.cola-notice > h4{font-size: 16px;}
+	.step {
+		width: 196px;
+	}
+	.step > h4{font-size: 20px;}
+	.model-box {
+		background: #f9f9f9 none repeat scroll 0 0;
+		display: inline-block;
+		position: unset;
+		transform: translate(0px);
+		width: 100%;
+		margin-top: 40px;
+	}
+	.cola-services.points > li {
+		margin-bottom: 30px;
+		width: 100%;
+	}
+	.profile-dp > img{width: 30%;}
+	.ride-request > ul li span {
+		width: 44%;
+	}
+	.profile-name {
+		padding-bottom: 0;
+	}
+	.profile-dp > ins {
+		float: none;
+		width: 100%;
+	}
+	.check-plan .theme-btn {
+		margin-bottom: 10px;
+		margin-right: 0;
+	}
+	.services-meta > h4 {
+		font-size: 18px;
+	}
+	.car-list{padding: 15px;}
+	.car-info{padding-top: 30px;}
+	.top-space50 {
+		padding-top: 10px;
+	}
+	.note-box.big {
+		line-height: 100px;
+		min-height: 100px;
+		width: 100%;
+	}
+	.balance-box {
+		margin-top: 20px;
+	}
+	.theme-btn.slim{padding: 6px 20px;}
+	.nice-select{margin-bottom: 10px;}
+	.info-meta > h6 {
+		font-size: 20px;
+	}
+	.share-embed{margin-top: 30px;}
+	.cola-box{margin-bottom: 20px;}
+	.search-route .date-n-time{margin-left: 115px;}
+
+	.feature-meta {
+		background: #000 none repeat scroll 0 0;
+		float: left;
+		max-width: 100%;
+		padding: 20px;
+		position: unset;
+		transform: translate(0px);
+		width: 100%;
+	}
+	.feature-meta > h1 {
+		font-size: 20px;
+	}
+	.feature-meta > p {
+		font-size: 13px;
+		line-height: 24px;
+	}
+	.heading > h1 {
+		font-size: 22px;
+	}
+	.kola-met {
+		max-width: 100%;
+		padding: 10px 20px;
+		width: 91%;
+	}
+	.kola-met > span {
+		display: inline-block;
+		font-size: 13px;
+		padding-top: 6px;
+	}
+	.rider-imag {
+		display: inline-block;
+		width: 100%;
+		text-align: center;
+	}
+	.rides-meta {
+		display: inline-block;
+		padding-left: 10px;
+		width: 100%;
+	}
+	.price-tag {
+		display: inline-block;
+		width: 100%;
+	}
+	.rides-listing, .cars-list {
+		padding: 0 20px 20px;
+		text-align: left;
+	}
+	.rides-meta > i {
+		right: 20px;
+		top: 5px;
+	}
+	.rides-meta > h4 {
+		font-size: 20px;
+	}
+	.rides-meta > span {
+		font-size: 14px;
+	}
+	.availablity {
+		width: 100%;
+	}
+	.rider-imag > i {
+		left: 0;
+	}
+	.car-inf {
+		margin-top: 0;
+	}
+
+	.featured-meta {
+		float: left;
+		padding: 20px;
+		position: unset;
+		transform: translate(0px);
+		width: 100%;
+	}
+	.cola-submition {
+
+		float: left;
+		padding: 0 10px;
+		position: unset;
+		width: 100%;
+	}
+	.cola-submition > ul {
+		line-height: initial;
+		position: relative;
+		z-index: 9;
+	}
+	.cola-submition > span {
+		position: relative;
+		z-index: 9;
+	}
+	.colaroute-search > form input {
+		margin-bottom: 10px;
+		width: 100%;
+		padding: 12px 25px;
+	}
+	.colla-select {
+		width: 100%;
+	}
+	.colaroute-search {
+		padding-bottom: 20px;
+		padding-left: 10px;
+		padding-right: 20px;
+		width: 100%;
+	}
+	.colaroute-search > form button {
+		border-radius: 5px;
+		font-size: 13px;
+		line-height: initial;
+		padding: 10px 0;
+	}
+	.colaroute-search > form label {
+		line-height: initial;
+		padding-left: 10px;
+	}
+	.colaroute-search > form {
+		width: 100%;
+	}
+	.cola-heading > h1 {
+		font-size: 27px;
+	}
+	.cola-heading > h5 {
+		font-size: 14px;
+		padding-top: 10px;
+	}
+	.cola-submition > ul > li {
+		margin-right: 0;
+	}
+	.cola-submition > span {
+		float: left;
+		line-height: initial;
+		padding-bottom: 30px;
+	}
+	.ride-title > h3 {
+		font-size: 18px;
+	}
+	.latest-rentalz > figure > span{font-size: 14px;}
+	.car-specific > p{width: 100%;}
+	.nav.nav-pills > li a h1 {
+		display: block;
+		font-size: 14px;
+		height: 30px;
+		line-height: 27px;
+		margin: 0 auto 10px;
+		width: 30px;
+	}
+	.nav-pills > li{padding: 0 10px !important}
+	.nav-pills > li a{text-align: center;}
+	.nav-pills > li::before{display: none;}
+	.about-car > p{width:100%;}	
+	.g-map{margin-top: 50px;}
+	.depart-time .nice-select {
+		margin-right: 0;
+		width: 140px;
+	}
+	.route-option .prefer > ul > li {
+		width: 100%;
+	}
+	.submit-route .seat-pirces {
+		margin-bottom: 30px;
+		width: 100%;
+	}
+	.heading > h3{font-size: 22px;}	
+	.profile-links {
+		margin-top: 10px;
+	}
+	.profile-links > li {
+		display: inline-block;
+		width: 49%;
+	} 
+	footer .row > div:nth-child(2) .widget, 
+	footer .row > div:nth-child(3) .widget{
+		margin-top: 30px;
+	}
+	.popup{width: 100%; height: 100vh;}
+	.popup-closed img {
+		filter: invert(0) brightness(0);
+	}
+	.popup-closed{
+		right: 15px;
+		top: -9px;
+	}
+	.popup .theme-btn.long{padding: 7px 10px;}
+	.cola-page .date-n-time > p {
+		width: 147px;
+	}
+	.coming-meta > h1 {
+		font-size: 100px;
+	}
+	.coming-meta > span {
+		font-size: 20px;
+	}
+	.coming-meta > p {
+		max-width: 85%;
+	}
+	.coming-meta .countdown > li span {
+		font-size: 35px;
+	}
+	.coming-meta .countdown > li p {
+		font-size: 18px;
+	}
+	.coming-meta .countdown {
+		margin-bottom: 0;
+	}
+	.table-list > li {
+		font-size: 14px;
+	}
+	.faq-meta > h4, .cola-notice > h4 {
+		font-size: 19px;
+	}
+	.info-links {
+		margin-bottom: 0;
+		margin-top: 10px;
+	}
+	.rentelz-grid, .rentelz-grid.disable{text-align: center;}
+	.remove-ext {
+		display: inline-block;
+		margin: 0;
+		width: 100%;
+	}
+	.log-with-fb{margin-bottom: 30px;}
+	.nav.nav-tabs.profile-btn li a{padding: 10px 37px;}
+	.profile-dp .profile-links > li {
+		display: inline-block;
+		font-size: 14px;
+		margin: 0 15px;
+		width: auto;
+	}
+	.profile-links {
+		margin-top: 10px;
+	}
+	.edit-profile .cola-form > div p{font-size: 13px;}
+	.profile-points {
+		margin-bottom: 20px;
+	}
+	.quotez {
+		margin-bottom: 20px;
+		margin-top: 20px;
+	}
+	.little-title {
+		font-size: 20px;
+	}
+	.quotez.top-space50 p {
+		color: #8c8c8c;
+		font-size: 14px;
+		line-height: 26px;
+	}
+	.about-owner{margin: 30px 0;}
+	.preferences > ul li:hover figure{left: 0;}
+	.head-search .search-route .location {
+		width: 42%;
+	}
+	.head-search .search-route .date-n-time {
+		width: 42%;
+	}
+	.space-70{padding: 30px 0;}
+	.fileContainer {
+		font-size: 14px;
+		width: 47%;
+	}
+
+
+
+
+
+	
+	
+}
+
+/*--- width 480px ---*/
+@media screen and (max-width: 480px){
+	.servize{
+		padding: 20px 0;
+	}
+	footer{padding: 50px 0 0;}
+	.cola-page .date-n-time > p {
+		width: 49.5%;
+	}
+	.kola-met{width: 87%; padding-left: 12px;}
+	.coming-meta .countdown > li{width: 110px;}
+	.mockup-right{display: none;}
+	.head-meta {
+		width: 100%;
+	}
+	.cola-head > .theme-btn {
+		float: left;
+	}
+	.news-letter form{width: 100%;}
+	.panel-title {
+		font-size: 14px;
+	}
+	.karaydar > h2, .car-malik > h2{font-size: 22px;}
+	.featurez > li > i {
+		width: 49%;
+	}
+	.featurez > li span {
+		width: 50%;
+	}
+	.nav.nav-tabs.profile-btn li a{padding: 10px 29px;}
+	.little-title {
+		font-size: 20px;
+		padding-bottom: 12px;
+	}
+	.ride-request > ul li{font-size: 12px;}
+	.edit-profile .cola-form textarea{margin-bottom: 0;}
+	.edit-profile{padding: 0 30px 40px;}
+	.invite-bymail > ul {
+		float: left;
+		text-align: left;
+	}
+	.invite-bymail span{width: 100%; text-align: left;}
+	.invite-bymail > ul li {
+		margin-bottom: 5px;
+		margin-left: 0;
+		margin-right: 5px;
+	}
+	.colla-table table thead tr th{font-size: 13px;}
+	.coming-soon-top{padding: 30px 20px;}
+
+
+
+}
+
+
+
+
+/*--- width 420px ---*/
+@media screen and (max-width: 420px){
+	
+	.cola-submition > ul > li {
+		margin: 0;
+		text-align: center;
+		width: 100%;
+	}
+	.cola-submition > ul > li a {
+		margin-bottom: 10px;
+		width: 100%;
+	}
+
+	.colaroute-search {
+		margin-bottom: 20px;
+		padding: 0 11px;
+	}
+	.review-caro{padding: 0;}
+		.cars-list > figure {
+		display: table-caption;
+		max-width: 100%;
+		width: 100%;
+	}
+	.cars-list > figure img {
+		max-width: 100%;
+		width: 100%;
+	}
+	.car-inf {
+		width: 100%;
+	}
+	.latest-rentalz > figure > span, span.tag{top: 12px;}
+	
+	.coming-meta > h1 {
+		font-size: 70px;
+	}
+	.coming-meta > p {
+		font-size: 12px;
+	}
+	.coming-meta .countdown > li {
+		width: 75px;
+	}
+	.coming-meta .countdown > li span {
+		font-size: 28px;
+	}
+	.coming-meta .countdown > li p {
+		font-size: 14px;
+	}
+	.coming-meta .countdown > li::after {
+		display: none;
+	}
+	.coming-meta form input {
+		width: 90%;
+	}
+	.info-links > span {
+		float: left;
+		margin-top: 10px;
+		width: 100%;
+	}
+	.step {
+		width: 155px;
+	}
+	.step::after {
+		left: -26px;
+	}
+	.karaydar .step::after {
+		right: -26px;
+	}
+	.steps.ext-topgap {
+		padding-top: 280px;
+	}
+	.profile-dp .theme-btn{margin-left: 3px;}
+	.nav.nav-tabs.profile-btn li a {
+		padding: 8px 20px;
+	}
+	.little-title {
+		font-size: 20px;
+		padding-bottom: 15px;
+	}
+	.invite-bymail > ul {
+		float: left;
+		text-align: left;
+	}
+	.invite-bymail > ul li {
+		margin-bottom: 5px;
+		margin-left: 0;
+		margin-right: 5px;
+	}
+	.head-search .search-route .location {
+		width: 100%;
+	}
+	.head-search .search-route .date-n-time {
+		width: 100%;
+	}
+	.head-search .search-route .theme-btn {
+		background: #e4e4e4 none repeat scroll 0 0;
+		margin-top: 10px;
+		width: 100%;
+	}
+	.kola-met{width: 85%;}
+	.fileContainer{width: 100%;}
+
+
+
+	
+
+	
+}
+
+
+@media screen and (max-width: 375px){
+	.nav.nav-tabs.profile-btn li a {
+		padding: 8px 15px;
+	}
+	.points .services-meta {
+		padding-left: 25px;
+		width: 82%;
+	}
+}
+
+
+/*--- width 360px ---*/
+@media screen and (max-width: 360px){
+	.space.no-top {padding-top: 0;}	
+	.space.no-bottom {padding-bottom: 0;}	
+	.info-links > a, .info-links > span {
+		float: left;
+		font-size: 14px;
+		margin-top: 10px;
+	}
+	.featurez > li > i{width: 130px;}
+	.featurez > li span {
+		width: 150px;
+	}
+	.pickup-time .date-n-time > p{width: 100%;}
+	.cola-page .pickup-time .theme-btn {
+		float: left;
+		margin-bottom: 16px;
+	}
+	.cola-page .date-n-time > span {
+		display: block;
+		margin-bottom: 10px;
+	}
+	.car-inf {
+		display: inline-block;
+		margin-top: 20px;
+		padding-left: 23px;
+		width: 100%;
+	}
+	.cars-list > figure {
+		display: block;
+		margin: 0 auto;
+	}
+	.cars-list > figure img {
+		max-width: 100%;
+		width: 100%;
+	}
+	.cars-listing .cars-list {
+		padding-bottom: 40px;
+		padding-top: 19px;
+	}
+	.cars-listing {
+		display: inline-block;
+		padding: 0;
+		width: 100%;
+	}
+	.step {
+		width: 140px;
+	}
+	span.tag{padding: 5px 14px; font-size: 12px;}
+	.step > h4{font-size: 19px;}
+
+	.step-title {
+		font-size: 13px;
+		padding: 5px 10px;
+	}
+	.submit-btn > .theme-btn {
+		margin-bottom: 10px;
+		margin-right: 0;
+	}
+	.step::after{left: -20px;}
+	.karaydar .step::after {
+		right: -20px;
+	}
+	.steps.ext-topgap {
+		padding-top: 277px;
+	}
+	.model-box {
+		background: #f9f9f9 none repeat scroll 0 0;
+		display: inline-block;
+		position: unset;
+		transform: translate(0px);
+		width: 100%;
+	}
+	.cola-services.points > li {
+		margin-bottom: 30px;
+		width: 100%;
+	}
+	.featurez > li span{width: 100%;}
+	.featurez > li > i{color: #fd727b;}
+	.cola-features > li{width: 100%;}
+
+	.car-list > figure {
+		display: block;
+		max-width: 100%;
+		width: 100%;
+	}
+	.car-info {
+		display: inline-block;
+		margin-top: 15px;
+	}
+	.car-info > .delete-pro {
+		right: 10px;
+		top: -10px;
+	}
+	.invite-bymail {
+		padding: 30px 20px;
+	}
+	.invite-bymail > ul {
+		float: left;
+		text-align: left;
+	}
+	.owner-avatar {
+		display: block;
+	}
+	.admin-meta {
+		display: block;
+		margin-top: 20px;
+		padding-left: 0;
+	}
+	.about-owner .verification {
+		display: block;
+		margin-top: 20px;
+	}
+	.preferences > ul > li > a {
+		float: left;
+		padding: 10px 0;
+		width: 100%;
+	}
+	.remaing-widget{padding: 20px;}
+	.rider-route{padding: 25px 20px}
+	.request-sending .theme-btn.long{padding: 7px 15px;}
+	.ride-request{margin-bottom: 40px;}
+	.colla-table table tbody tr td figure{transform: scale(0.5) !important;}
+	.search-route .date-n-time{margin-left: 37px;}
+	.location > p input {
+		width: 140px;
+	}
+	.search-route .date-n-time > p {
+		width: 150px;
+	}
+	.search-route .theme-btn{font-size: 13px; padding: 8px 18px;}
+	.nav.nav-pills > li a h1 {
+		font-size: 12px;
+		line-height: 28px;
+		width: 30px;
+	}
+	.car-specific > p{width: 100%;}
+	.colla-select{padding: 0;}
+	.nav-pills > li {
+		padding: 5px !important;
+	}
+	.nav-pills > li::before {
+		display: none;
+	}
+	.nav-pills > li a {
+		text-align: -moz-center;
+	}
+	form.fule-type{width: 100%; padding-left: 15px;}
+	.owner-pic {
+		width: 100%;
+	}
+	.owner-sec > ul {
+		margin-top: 20px;
+		padding-left: 0;
+		width: 100%;
+	}
+	.points .services-meta {
+		width: 80%;
+	}
+	.head-meta > p{margin-left: 20px;}
+	.nav.nav-tabs.profile-btn li a {
+		padding: 8px 14px;
+	}
+	.head-search .search-route .date-n-time > p{
+		width: 100%;
+	}
+	.cola-notice {
+		padding: 30px;
+	}
+
+
+}
+/*--- width 320px ---*/
+@media screen and (max-width: 320px){
+	.head-meta > h4{width: 100%;}
+	.head-meta > p{margin-left: 0;}
+	.info-links{margin-top: 0;}
+	.nav.nav-tabs.profile-btn li a {
+		font-size: 12px;
+		font-weight: 600;
+		padding: 8px 14px;
+	}
+	.ride-request > ul li {
+		font-size: 12px;
+		padding: 15px 10px;
+	}
+	.ride-request > ul li span {
+		width: 47%;
+	}
+	.points .services-meta{width: 100%; padding-left: 0;}
+	.colla-table table tbody tr td{padding-left: 10px; width: 27%;}
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,126 @@
+<div class="mt-5">
+   <br> 
+    <h1 class="text-center">Mes Annonces</h1>
+    <div class="container">
+       
+        <table class="table border" >
+          <thead>
+            <tr>
+              <th scope="col">dateDep</th>
+              <th scope="col">dateArr</th>
+              <th scope="col">heureDep</th>
+              <th scope="col">prixPlace</th>
+              <th scope="col">lieuDep</th>
+              <th scope="col">nbrPlace</th>
+              <th scope="col">lieuArr</th>
+              <th scope="col">Action</th>
+
+  
+  
+            </tr>
+          </thead>
+            <tbody>
+              <tr *ngFor="let annonce of cars">
+                <td>{{annonce.dateDep}}</td>
+                <td>{{annonce.dateArr}}</td>
+                <td>{{annonce.heureDep}}</td>
+                <td>{{annonce.prixPlace}}</td>
+                <td>{{annonce.lieuDep}}</td>
+                <td>{{annonce.nbrPlace}}</td>
+                <td>{{annonce.lieuArr}}</td>
+                <td>
+                    <i class="flaticon-edit" data-toggle="modal" data-target="#fluidModalRightInfo"(click)="rec(annonce.id)"> </i>&nbsp;
+                    <i class="fa fa-trash" aria-hidden="true" (click)="delete(annonce.id)" ></i> 
+
+
+                 
+                   
+                </td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+  </div>
+
+  
+    
+    <!-- Modal pour afficher le formulaire -->
+    <div class="modal fade" id="fluidModalRightInfo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+         aria-hidden="true">
+      <div class="modal-dialog modal-dialog-fluid modal-dialog-centered modal-dialog-scrollable modal-lg"
+           role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Modifier Annonce</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form [formGroup]="annonceForm" (ngSubmit)="onSubmit()">
+              <div class="row">
+                <div class="col-md-6">
+                  <label>Description:</label>
+                  <input type="text" formControlName="description">
+                </div>
+                <div class="col-md-6">
+                  <label>Date de départ:</label>
+                  <input type="date" formControlName="dateDep">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <label>Date d'arrivée:</label>
+                  <input type="date" formControlName="dateArr"></div>
+                <div class="col-md-6">
+                  <label>Heure de départ:</label>
+                  <input type="time" formControlName="heureDep"></div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <label>Heure d'arrivée:</label>
+                  <input type="time" formControlName="heureArr">
+                </div>
+                <div class="col-md-6">
+                  <label>Prix par place:</label>
+                  <input type="number" formControlName="prixPlace">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <label>Lieu de départ:</label>
+                  <input type="text" formControlName="lieuDep">
+                </div>
+                <div class="col-md-6">
+                  <label>Nombre de places disponibles:</label>
+                  <input type="number" formControlName="nbrPlace"></div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <label>Lieu d'arrivée:</label>
+                  <input type="text" formControlName="lieuArr">
+                </div>
+               
+              </div>
+             <div style="display: flex;">
+              <div class="row">
+                <div class="col-md-6">
+                  <label>Aller-retour:</label>
+                  <input type="checkbox" formControlName="aller_retour">
+                </div>
+                <div class="col-md-6">
+                  <label>Animaux de compagnie autorisés:</label>
+                  <input type="checkbox" formControlName="animaux_de_companie"></div>
+                  <div class="col-md-6">
+                    <label>Cigarette autorisée:</label>
+                    <input type="checkbox" formControlName="cigarette">
+                  </div>
+              </div>
+             </div>
+              <button type="submit" >Modifier</button>
+  
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>

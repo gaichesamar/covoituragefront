@@ -1,0 +1,126 @@
+/*
+	main color file
+	Project: Car Carry:
+	color: pink
+	
+*/
+/*=========================
+	FONT COLOR
+=========================*/
+
+.login-area .post > a:hover,
+.login-area > ul li a:hover,
+nav > ul > li a:hover,
+.colaroute-search > form label,
+.cola-submition > span a,
+.ride-rent > em,
+.ride-title > a:hover,
+.activity-meta > span a:hover,
+.activity-meta > span a:before,
+.rent-meta > h4 > a:hover,
+.rent-meta > span i,
+.rider-meta > ins,
+.rider-meta > p a:hover,
+.list-style > li > a:hover,
+.funfact > span.counter,
+.panel-title > a[aria-expanded="false"]::before,
+.panel-title > a[aria-expanded="true"]::before,
+.cola-form > span > a,
+.cola-form form label > a,
+.cola-form > h5,
+.request-box > span ins,
+.services-links > li i,
+.car-info > span i,
+.balance-box > ins,
+.cola-box > i,
+.cola-box > h5,
+.profile-links > li > a:hover,
+.info-meta > h6,
+.note-box > span,
+.rides-colla > li > h5,
+.colla-table table tbody tr td > a,
+.colla-table table tbody tr td > a::before,
+.dp-edit > a,
+.edit-profile .cola-form label > a,
+.payment-selection > li > a,
+.gen-box.del .theme-btn,
+.contact-links > li a:hover,
+.car-info > .delete-pro:hover,
+.model-box > em i,
+.model-box > ul li::before,
+.rentelz-grid > span i,
+.rentelz-grid > h4 a:hover,
+.detail-head > span > a:hover,
+.pickup-time > ins,
+.point-promo > p em,
+.kola-met > h4,
+.more-find > i,
+.rides-meta > span > i,
+.price-tag > em,
+.karaydar > h2,
+.area > span i,
+.preferences > ul > li > a,
+.price > ins,
+.price > p > a:hover,
+span.locatio > i,
+.pickup-time .find > i,
+.filter-btns .del-filter,
+.filter-btns .cancel:hover,
+.fees > ins.big-price,
+.car-detail form span.add-center-point:hover,
+.seat-pirces > span > i,
+.popup form .canceled,
+.ttl-blnc > span,
+.paycard form .row > div ins,
+.table-list > li a:hover,
+.place-rqst > span ins,
+.time-info span em,
+nav > ul.main-menu > li i:hover,
+.review-meta::before,
+.coming-meta .countdown > li span, .coming-meta .countdown > li p
+{
+	color: #f75f62;	
+}
+
+
+/*=========================
+	BACKGROUND COLOR
+=========================*/
+.owl-prev:hover:before,
+.owl-next:hover:before,
+.colaroute-search > form button,
+#topcontrol:hover,
+.colla-apps > li a:hover,
+.login-dropdown > ul > li a .badge,
+.car-info > a,
+.dp-edit > a > i,
+.xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_default, .xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_current, .xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box > div > div.xdsoft_current,
+.widget-title > h4::before,
+.login-area > ul > li.post a:hover,
+.latest-rentalz > figure > span,
+.sub-head .theme-btn,
+span.tag,
+.table-list > li::before,
+.theme-btn:hover,
+.review-face::before,
+.baner-meta > a,
+.coming-meta > a.theme-btn 
+{
+	background: #f75f62;
+}
+
+/*=========================
+	BORDER COLOR
+=========================*/
+
+.colla-apps > li a:hover,
+.gen-box.del .theme-btn,
+.gen-box.del,
+.karaydar .step::after,
+.rider-route > ul > li:last-child::before
+{
+	border-color: #f75f62;	
+}
+.karaydar span.tag::before{
+	border-right-color: #f75f62;
+}

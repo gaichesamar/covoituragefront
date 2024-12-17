@@ -1,0 +1,85 @@
+<section >
+  <div class="space">
+    <div class="container">
+
+      <div class="leasing-car">
+        <div class="row">
+          <div class="cola-form">
+
+
+            <h5 style="color:#0E693D;">Ajouter Annonce :</h5>
+            <form [formGroup]="annonceForm" (ngSubmit)="onSubmit()">
+              <div class="row">
+                <div class="col-md-6">
+                  <label>Description:</label>
+                  <input type="text">
+                </div>
+                <div class="col-md-6">
+                  <label>Date de départ:</label>
+                  <input type="date" formControlName="dateDep">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <label>Date d'arrivée:</label>
+                  <input type="date" formControlName="dateArr"></div>
+                <div class="col-md-6">
+                  <label>Heure de départ:</label>
+                  <input type="time" formControlName="heureDep"></div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <label>Heure d'arrivée:</label>
+                  <input type="time" formControlName="heureArr">
+                </div>
+                <div class="col-md-6">
+                  <label>Prix par place:</label>
+                  <input type="number" formControlName="prixPlace">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <label>Lieu de départ:</label>
+                  <input type="text" formControlName="lieuDep">
+                </div>
+                <div class="col-md-6">
+                  <label>Nombre de places disponibles:</label>
+                  <input type="number" formControlName="nbrPlace"></div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <label>Lieu d'arrivée:</label>
+                  <input type="text" formControlName="lieuArr">
+                </div>
+               
+              </div>
+             <div style="display: flex;">
+              <div class="row">
+                <div class="col-md-6">
+                  <label>Aller-retour:</label>
+                  <input type="checkbox" formControlName="aller_retour">
+                </div>
+                <div class="col-md-6">
+                  <label>Animaux de compagnie autorisés:</label>
+                  <input type="checkbox" formControlName="animaux_de_companie"></div>
+                  <div class="col-md-6">
+                    <label>Cigarette autorisée:</label>
+                    <input type="checkbox" formControlName="cigarette">
+                  </div>
+              </div>
+             </div>
+              <button type="submit" >Créer l'annonce</button>
+
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+</section>
+
+
+

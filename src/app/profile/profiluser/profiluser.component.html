@@ -1,0 +1,428 @@
+<section class="tj-account-frm">
+
+
+  <section>
+    <div class="space">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="profile">
+              <div class="row">
+                <div class="col-lg-3">
+                  <div class="profile-dp">
+                    <figure><img src="http://localhost:8084/upload/files/{{conducteur?.photo}}" alt=""></figure>
+                    <div class="profile-info">
+                      <span class="profile-name">{{conducteur?.username}}</span>
+                      <p>{{conducteur?.genre}}</p>
+
+                      <!--                      <ul class="stars-rating">-->
+                      <!--                        <star-rating [starType]="'svg'" [rating]='conducteur?.note'></star-rating>-->
+                      <!--                      </ul>-->
+                      <!--                      <ins>{{totalavis}} Reviews</ins>-->
+                    </div>
+                    <ul class="verification">
+                      <li><i class="flaticon-world"></i> <strong>Age</strong>
+                        :{{calculage(conducteur?.dateOfBirth)}}</li>
+                      <li><i class="flaticon-tick"></i> Adress: {{conducteur?.adress}}</li>
+                      <li><i class="flaticon-tick"></i>Numéro de Téléphone vérifié</li>
+               
+                      <li ><i class="flaticon-volkswagen-car-side-view"  data-toggle="modal" data-target="#fluidModalRightInfo3"></i> Mes voiture:</li>
+                      <div class="note-box">
+
+                        <!-- Bouton pour ouvrir le modal -->
+          <span style="color: #0f3e68"  data-toggle="modal"data-target="#modifierconducteur">
+<img src="assets/images/update.png" style="height: 30px;"/>modifier Votre Profile
+</span>
+                      </div>
+                    </ul>
+
+                  </div>
+
+                </div>
+                
+                <div class="col-lg-6 col-sm-12">
+                  <div class="profile-bg">
+
+
+                    <div class="tab-content profile">
+                      <div class="tab-pane active fade show " id="link1">
+                        <div class="ride-request">
+                          <ul>
+                            <li>Nom et
+                              Prénom :&nbsp;<span>  {{conducteur?.firstname}}  {{conducteur?.lastname}}</span></li>
+                            <li>Email:&nbsp;<span>{{conducteur?.email}}</span></li>
+                            <li>Numéro de Téléphone :<span>{{conducteur?.telephone}}</span></li>
+                              <!--<li>Numéro Cart Identitée:<span>{{conducteur?.cin}}</span></li>-->
+                              <!--<li>Numéro de Permis:<span>{{conducteur?.permis}}</span></li>-->
+
+                          </ul>
+
+
+                        </div>
+                      </div>
+                    </div>
+
+                    
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-12">
+                  <div class="sidebar right">
+                    <div class="note-box">
+        
+     <!-- Bouton pour ouvrir le modal -->
+<span data-toggle="modal" data-target="#fluidModalRightInfo">
+  <i class="flaticon-volkswagen-car-side-view"></i> Ajouter véhicule
+</span>
+
+<!-- Modal pour afficher le formulaire -->
+<div class="modal fade" id="fluidModalRightInfo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-fluid modal-dialog-centered modal-dialog-scrollable modal-lg"
+       role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Ajouter une voiture</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <!-- Formulaire -->
+        <form [formGroup]="form" (ngSubmit)="Submit()">
+          <div class="mb-3">
+            <label for="marque" class="form-label">Marque:</label>
+            <input type="text" formControlName="marque" id="marque" name="marque" class="form-control" required>
+          </div>
+         
+          <div class="mb-3">
+            <label for="immatriculation" class="form-label">Immatriculation:</label>
+            <input type="text" formControlName="immatriculation" id="immatriculation" name="immatriculation" class="form-control" required>
+          </div>
+          <div class="mb-3" > 
+            <label for="couleur" class="form-label">Couleur:</label>
+            <input type="color" formControlName="couleur" id="couleur" name="couleur" class="form-control" style="width:15%;" required>
+          </div>
+          <div class="mb-3">
+            <label for="nbrPlace" class="form-label">Nombre de places:</label>
+            <input type="number" formControlName="nbrPlace" id="nbrPlace" name="nbrPlace" class="form-control" required>
+          </div>
+          <div class="mb-3">
+            <label for="type" class="form-label">Type:</label>
+            <input type="text" formControlName="type" id="type" name="type" class="form-control" required>
+          </div>
+          <div class="text-center">
+            <button [disabled]="!form.valid" type="submit" class="btn btn-primary">Ajouter</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+   </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+</div>
+</div>
+  </section><!-- points section -->
+
+
+</section>
+
+
+<div class="modal fade" id="fluidModalRightInfo3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-fluid modal-dialog-centered modal-dialog-scrollable modal-lg"
+       role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Mes veuhicles</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <!-- Formulaire -->
+        <section>
+        	<div class="space">
+        		<div class="container">
+        			<div class="row">
+                    	<div class="col-md-12">
+                        	<div class="profile">
+                            	<div class="row">
+		
+                                	
+                                    	<div class="note-box">
+                                        	<p> <img src="assets/images/voiture.jpg" alt="" srcset="" style="width: 147px;
+                                            position: relative;
+                                            right: -40%;
+                                            border-radius: 74%;"></p>
+                                        </div>
+                                        <div class="colla-table">
+                                        	<table class="table table-responsive">
+                                            	<thead>
+                                                	<tr>
+                                                    	<th>marque</th>
+                                                        <th>immatriculation</th>
+                                                        <th>  couleur</th>
+                                                        <th>  nbrPlace</th>
+                                                        <th> type</th>
+                                                        <th> action</th>
+                                                        
+
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                	<tr *ngFor="let c of voitures">
+                                                    	<td>{{c.marque}}</td>
+                                                        <td>{{c.immatriculation}}</td>
+                                                        <td>{{c.couleur}}</td>
+                                                        <td>{{c.nbrPlace}}</td>
+                                                        <td>{{c.type}}</td>
+                                                        <td>
+                                                          <i class="flaticon-edit"  data-toggle="modal" data-target="#rightModal" (click)="rec(c.id,c.marque,c.immatriculation,c.nbrPlace,c.couleur,c.type,c.modele)"></i>&nbsp;
+                                                          <i class="fa fa-trash" aria-hidden="true" (click)="delete(c.id)" ></i> 
+                                      
+                                      
+                                                       
+                                                         
+                                                      </td>
+                                                    </tr>
+                                                   
+                                                    
+                                                   
+                                                  
+                                                   
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                  
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        		</div>
+        	</div>
+        </section>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="modifierconducteur" tabindex="-1" role="dialog"aria-labelledby="myModalLabel" aria-hidden="true">
+    <div
+      class="modal-dialog modal-dialog-fluid modal-dialog-centered modal-dialog-scrollable modal-lg"
+      role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Modifier votre profile</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form class="account-frm" #f="ngForm">
+            <div class="col-md-12 col-sm-12">
+              <div class="col-md-12">
+                <!-- #region -->
+               
+                <div class="account-field">
+                  <label>Nom</label>
+
+                  <input type="text" placeholder="{{conducteur['firstname']}}" class="form-control" name="firstname"
+                         [(ngModel)]="conducteur['username']" #username="ngModel"
+                         [ngClass]="{ 'is-invalid': f.submitted && username.invalid }" required/>
+                  <div *ngIf="f.submitted && username.invalid" class="invalid-feedback">
+                    <div *ngIf="username.errors">Nom d'utilisateur Obligatoire</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="account-field">
+                  <label>Prenom</label>
+
+                  <input type="text" placeholder="{{conducteur['lastname']}}" class="form-control" name="lastname"
+                         [(ngModel)]="conducteur['lastname']" #lastName="ngModel"
+                         [ngClass]="{ 'is-invalid': f.submitted && lastname.invalid }" required/>
+                  <div *ngIf="f.submitted && lastname.invalid" class="invalid-feedback">
+                    <div *ngIf="lastName.errors">Prenom Obligatoire</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="account-field">
+                  <label>Date de Naissance</label>
+
+                  <input type="date" placeholder="{{conducteur['dateOfBirth']}}" class="form-control" name="dateOfBirth"
+                         [(ngModel)]="conducteur['dateOfBirth']" #lastName="ngModel"
+                         [ngClass]="{ 'is-invalid': f.submitted && lastname.invalid }" required/>
+                  <div *ngIf="f.submitted && dateOfBirth.invalid" class="invalid-feedback">
+                    <div *ngIf="lastName.errors">dateOfBirth Obligatoire</div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="col-md-12 col-sm-12">
+              
+              <div class="col-md-12">
+                <div class="account-field">
+                  <label>Email</label>
+                  <span class="far fa-envelope"></span>
+                  <input type="email" name="email_id" placeholder="{{conducteur['email']}}" class="form-control"
+                         name="email" [(ngModel)]="conducteur['email']" #email="ngModel"
+                         [ngClass]="{ 'is-invalid': f.submitted && email.invalid }" required email/>
+                  <div *ngIf="f.submitted && email.invalid" class="invalid-feedback">
+                    <div *ngIf="email.errors.required">Email Obligatoire</div>
+                    <div *ngIf="email.errors.email">address mail invalid</div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="col-md-12 col-sm-12">
+
+              <div class="col-md-12">
+                <div class="account-field">
+                  <label>Adress</label>
+
+                  <input type="text" placeholder="{{conducteur['adress']}}" class="form-control"
+                         [(ngModel)]="conducteur['adress']" name="adress" #adress="ngModel"
+                         [ngClass]="{ 'is-invalid': f.submitted && adress.invalid }" required/>
+                  <div *ngIf="f.submitted && adress.invalid" class="invalid-feedback">
+                    <div *ngIf="adress.errors.required">Adress Obligatoire</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="account-field">
+                  <label>Numero Telphone</label>
+
+                  <input type="tel" placeholder="{{conducteur['telephone']}}" class="form-control"
+                         [(ngModel)]="conducteur['telephone']"
+                         name="tel" #tel="ngModel" [ngClass]="{ 'is-invalid':f. submitted && tel.invalid }" required/>
+                  <div *ngIf="f.submitted && tel.invalid" class="invalid-feedback">
+                    <div *ngIf="tel.errors.required">Telphone Obligatoire</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-6">
+              <div class="account-field">
+            
+              
+
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-6">
+              <button type="submit" class="save-btn" data-dismiss="modal" (click)="modifierconducteur()">Modifier <i
+                class="fa fa-arrow-circle-right"
+                aria-hidden="true"></i></button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  <!-- Modal -->
+<div class="modal fade" id="rightModal" tabindex="-1" role="dialog" aria-labelledby="rightModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-slideout" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="rightModalLabel">Right On</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form class="account-frm" >
+          <div class="col-md-12 col-sm-12">
+            <div class="col-md-12">
+              <!-- #region -->
+             
+              <div class="account-field">
+                <label>Marque</label>
+
+                <input type="text" placeholder="" class="form-control" name="marque"placeholder="{{vehicule['marque']}}" class="form-control" name="marque"
+                [(ngModel)]="vehicule['marque']" #marque="ngModel"
+                required/>
+               
+              </div>
+            </div>
+           
+            <div class="col-md-12">
+              <div class="account-field">
+                <label>Couleur</label>
+
+                <input type="color" placeholder="" class="form-control" name="couleur"placeholder="{{vehicule['couleur']}}" class="form-control" name="couleur"
+                [(ngModel)]="vehicule['couleur']" #marque="ngModel"
+                required/>                
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-12 col-sm-12">
+            
+            <div class="col-md-12">
+              <div class="account-field">
+                <label>Immatriculation</label>
+                <span class="far fa-envelope"></span>
+                <input type="text" placeholder="" class="form-control" name="immatriculation"placeholder="{{vehicule['immatriculation']}}" class="form-control" name="immatriculation"
+                [(ngModel)]="vehicule['immatriculation']" #marque="ngModel"
+                required/> 
+               
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-12 col-sm-12">
+
+            <div class="col-md-12">
+              <div class="account-field">
+                <label>Nombre de places:</label>
+
+                <input type="number" placeholder="" class="form-control" name="nbrPlace"placeholder="{{vehicule['nbrPlace']}}" class="form-control" name="nbrPlace"
+                [(ngModel)]="vehicule['nbrPlace']" #marque="ngModel"
+                required/> 
+                
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="account-field">
+                <label>Type:</label>
+
+                <input type="text" placeholder="" class="form-control" name="type"placeholder="{{vehicule['type']}}" class="form-control" name="type"
+                [(ngModel)]="vehicule['type']" #marque="ngModel"
+                required/> 
+               
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-6">
+            <div class="account-field">
+          
+            
+
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-6">
+            <button type="submit" class="save-btn" data-dismiss="modal" (click)="modifiervoiture()">Modifier <i
+              class="fa fa-arrow-circle-right"
+              aria-hidden="true"></i></button>
+          </div>
+        </form>      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>

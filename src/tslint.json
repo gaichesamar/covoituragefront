@@ -1,0 +1,10 @@
+{
+  "extends": "tslint:recommended",
+  "rulesDirectory": [
+    "codelyzer"
+  ],
+  "rules": {
+    "no-duplicate-variable": true,
+    "no-unused-variable": true
+  }
+}

@@ -1,0 +1,102 @@
+<div class="topbar">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <header>
+          <div class="logo">
+            <a><img src="assets/images/Logoway2go.png" alt="LOgo"></a>
+          </div>
+          <nav>
+            <ul class="main-menu">
+              <li><a routerLink="">Accueil</a>
+
+              </li>
+            <li><a routerLink="/reclamation">Contactez Nous </a>
+
+              </li>
+              <li><a routerLink="/listannonce" title="">Rechercher Annonces</a>
+
+              </li>
+              <li><a routerLink="/ajoutannonce">Publier Annonce</a>
+              </li>
+              <li *ngIf="ison"><img src="http://localhost:8084/upload/files/{{userconnecte?.photo}}"
+                                    style="    width: 4rem;
+    height: 4rem;" alt="LOgo">
+                <ul>
+                  <li><a routerLink="/profiluser/{{userconnecte?.id}}">{{userconnecte?.username}}</a></li>
+                  <li><a routerLink="/mesannonce">Mes Annonces</a></li>
+                  <li><a title="">Mes reservations</a></li>
+                  <li><a > Parametre </a>
+                  <ul>
+                    <li> <a routerLink="/updade"> Modifier Profile</a></li>
+                    <li><a routerLink="/updade"> Supprimer Profile</a></li>
+
+                  </ul>
+                  </li>
+
+                  <li><a (click)="deconecter()" *ngIf="ison"> Deconnecter </a></li>
+
+                </ul>
+              </li>
+
+
+            </ul>
+          </nav>
+          <div class="time-info">
+            <a class="btn btn-primary" style="size: 50px ;background: #0E693D;" href="#myModal" data-toggle="modal"
+               *ngIf="!ison">Connexion <i
+              aria-hidden="true"></i></a>&nbsp;&nbsp;
+            <a class="btn btn-primary  " style="background:#081524" href="register" style="size: 50px"
+               *ngIf="!ison"> Inscription <i
+              aria-hidden="true"></i></a>
+
+          </div>
+        </header>
+      </div>
+    </div>
+  </div>
+</div><!-- topbar header -->
+
+
+<div id="myModal" class="modal fade">
+  <div class="modal-dialog modal-login">
+    <div class="modal-content">
+      <div class="modal-header">
+
+        <h4 class="modal-title"> Connexion</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+      </div>
+      <div class="modal-body">
+        <form [formGroup]="loginForm" (ngSubmit)="onlogin()">
+          <div class="form-group">
+            <input type="text" formControlName="username" class="form-control"
+                   [ngClass]="{ 'is-invalid': submitted && f.username.errors }"/>
+            <div *ngIf="submitted && f.username.errors" class="invalid-feedback">
+              <div *ngIf="f.username.errors.required">Nom d'utilisateur est obligatoire</div>
+
+            </div>
+
+          </div>
+          <div class="form-group">
+            <input type="password" placeholder="*********" formControlName="password" class="form-control"
+                   [ngClass]="{ 'is-invalid': submitted && f.password.errors }"/>
+
+
+            <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+              <div *ngIf="f.password.errors.required">Mot de passe obligatoire</div>
+            </div>
+          </div>
+          <div class="form-group">
+            <button type="submit" class="btn btn-primary btn-lg btn-block login-btn">Connexion</button>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <a href="#">Mot de passe oublier ?</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+

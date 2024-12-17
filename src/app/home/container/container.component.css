@@ -1,0 +1,110 @@
+.modal {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+label {
+  display: block;
+  font: 1rem 'Fira Sans', sans-serif;
+}
+
+input,
+label {
+  margin: .4rem 0;
+}
+
+.note {
+  font-size: .8em;
+}
+
+
+.errors{
+
+  color:#D8000C;
+  text-emphasis: darkred;
+}
+
+   .btn btn-primary{
+  background-color: #D8000C;
+}
+.tj-slider {
+  position: relative;
+  overflow: hidden;
+}
+
+.tj-cab-slider {
+  position: relative;
+}
+
+.slide-item {
+  position: relative;
+}
+
+.slide-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.slide-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 30px 20px;
+}
+
+.slide-caption h2 {
+  font-size: 42px;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  line-height: 1.2;
+  text-shadow: 2px 2px #000;
+}
+
+.slide-caption p {
+  font-size: 24px;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  line-height: 1.2;
+  text-shadow: 2px 2px #000;
+}
+
+.slide-caption .slide-btns {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.slide-caption .slide-btns .cola-submition ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.slide-caption .slide-btns .cola-submition ul li {
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.slide-caption .slide-btns .theme-btn {
+  display: inline-block;
+  padding: 12px 30px;
+  background-color: #fff;
+  color: #333;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.slide-caption .slide-btns .theme-btn:hover {
+  background: #0E693D;
+  color: #fff;
+  cursor: pointer;
+}

@@ -1,0 +1,56 @@
+<body>
+    
+    <div class='container-fluid mt-5 mb-5 p-0'>
+      <div class="inner row d-flex justify-content-center">
+          <div class="card col-md-5 col-12 box1">
+              <div class="card-content">
+                  <div class="card-header">
+                      <div class="heading mb-3"> PAYMENT METHOD </div>
+                      <div class="sub-heading row text-center m-0">
+                          <div class="col-6 col-md-6 sub-heading1">En espece</div>
+                        </div>
+                  </div>
+                  <div class="card-body">
+                      <p><small> You choose the method of payment with cash Enter your payment details </small></p>
+                      <img src="../../../assets/images/pay3.png" alt="" srcset="">
+                  </div>
+              </div>
+          </div>
+          <div class="card col-md-5 col-12 box2">
+              <div class="card-content">
+                  <div class="card-header box2-head">
+                      <div class="heading2"> PAYMENT DETAILS </div>
+                  </div>
+                  <div class="card-body col-10 offset-1">
+                    <form [formGroup]="paymentForm" (ngSubmit)="onSubmit()">
+                      <div class="form-group">
+                       
+                        <input type="number" id="prix" class="form-control" formControlName="prix" placeholder="Prix" />
+                      </div>
+                      <div class="form-group">
+                        
+                        <input type="text" id="nom" class="form-control" formControlName="nom" placeholder="Nom"/>
+                      </div>
+                      <div class="form-group">
+                        
+                        <input type="text" id="prenom" class="form-control" formControlName="prenom" placeholder="Prenom"/>
+                      </div>
+                      <div class="form-group">
+                        
+                        <input type="email" id="email" class="form-control" formControlName="email" placeholder="Email" />
+                      </div>
+                      <div class="form-group">
+                        
+                        <input type="tel" id="telephone" class="form-control" formControlName="telephone" placeholder="Telephone"/>
+                      </div>
+                      <button type="submit" class="btn btn-primary">Payer</button>
+                    </form>
+                  </div>
+                  
+              </div>
+          </div>
+      </div>
+      
+    </div>
+    <a>.</a>
+    </body>

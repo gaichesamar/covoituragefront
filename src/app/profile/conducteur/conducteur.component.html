@@ -1,0 +1,167 @@
+<section class="tj-account-frm">
+  <div class="col-md-12 col-sm-12">
+    <div class="tab-content">
+      <div class="tab-pane active" id="confirm_booking">
+        <div class="col-md-6 ">
+          <div class="account-field">
+            <img src="assets/images/conducteur-de-limousine-icône-style-plat-illustrat-vecteur-95290218.jpg" height="250" width="245">
+          </div>
+          <strong style="font-size: 42px;">{{ user.username }}</strong><br>
+          <strong></strong>
+        </div>
+        
+  <section>
+    <div class="profile-details"*ngIf="user">
+      <div *ngIf="user">
+        
+
+  </div>
+</div>
+<form [formGroup]="form" (ngSubmit)="addavis()" >
+  <star-rating-control    (starClickChange)="addavis()"  formControlName="raiting"></star-rating-control>
+
+
+</form>
+
+
+<div class="profile-actions">
+<button class="btn-edit-profile" onclick="window.location.href='/add'">Modifier profil</button>
+<button class="btn-delete-profile">Supprimer  profil</button>
+</div>
+<div class="vehicles" style="">
+<h2>Informations personnelles</h2>			
+<div class="profile-details"*ngIf="user">
+<div *ngIf="user">
+  <p><strong>Nom :</strong> {{ user.lastname }}</p>
+  <p><strong>Prénom :</strong> {{ user.firstname }}</p>
+  <p><strong>Email :</strong> {{ user.email }}</p>
+</div>
+</div>
+
+
+</div>
+<div class>
+  <!--Content-->
+
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="exampleModalLongTitle">Ajouter votre voiture</h5>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+
+      <form class="account-frm" #f="ngForm">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="account-field">
+              <label>Marque</label>
+              <select name="marque"
+                      class="form-control"  
+                      required>
+
+                <option ></option>
+
+              </select>
+
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="account-field">
+              <label>Model</label> 
+              <select name="model" class="form-control" required>
+
+                <option ></option>
+
+              </select>
+
+            </div>
+          </div>
+          <br>
+          <br>
+          <br>
+          <br>
+
+        </div>
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="account-field">
+              <label> plaque_imatriculation</label>
+              <input placeholder="" type="text" class="form-control" name="plaque_imatriculation" 
+                   required>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="account-field">
+              <label>Date_imatriculation</label>
+              <input type="date" placeholder="" class="form-control" name="date_imatriculation"
+                      required>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+
+
+          <div class="account-field">
+            <div class="col-md-6">
+              <label>type</label>
+             
+              <div class="container">
+                <div class="row">
+
+
+                  <div >
+                    <div class="btn-group  btn-group-justified" >
+                      <div class="col-md-2 col-sm-2" >
+
+
+
+
+                          <input type="radio" class="form-control"  name="type"  required/>
+
+
+</div>
+
+
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="account-field">
+              <label> Couleur</label>
+              <input type="text" placeholder="" class="form-control" name="couleur"  required>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="account-field">
+              <label>Nombre de places </label>
+
+              <input type="number" placeholder="" class="form-control" name="nbrplacesdisponible"
+               required>
+
+            </div>
+          </div>
+        </div>
+
+        <!--Footer-->
+        <div class="modal-footer justify-content-center">
+          <button type="submit" data-dismiss="modal" class="btn btn-primary">AJOUTER
+            <i class="far fa-gem ml-1 text-white"></i>
+          </button>
+          <button type="button" class="btn btn-outline-primary waves-effect" data-dismiss="modal">Annuler</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

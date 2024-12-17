@@ -1,0 +1,99 @@
+
+
+
+
+<div class="tj-wrapper"   style="    background-image: url('../../../assets/images/ar.jpeg' );
+  
+background-size: cover;
+background-repeat:no-repeat ;" >
+
+
+
+
+<h6>Modifier votre Profile</h6>
+
+  <div class="container">
+
+
+    <div class="row">
+      <div class="col-md-12 col-sm-12">
+        <div class="tab-content">
+          <div class="tab-pane active">
+
+
+            <div class="col-lg-6 mx-auto" style="background-color: #3f72af85;
+            padding: 33px;">
+
+              <form [formGroup]="form" (ngSubmit)="submit()">
+
+                <!--name-->                <div class="form-group">
+
+                            <input id="username"  formControlName="username" type="text" name="username" class="form-control" placeholder="username" required>
+                          
+                        </div>
+                         <div class="form-group">
+                            <input id="firstname"  formControlName="firstname" type="text" name="firstname" class="form-control" placeholder="firstname" required>
+                          </div>
+                        
+                          <div class="form-group">
+                            <input id="lastname"  formControlName="lastname" type="text" name="lastname" class="form-control" placeholder="lastname" required>
+                          </div>
+                        
+              
+              
+                        <div class="row">
+                          <div class="col-md-12 form-group mb-3">
+                            <input id="telephone" type="text"  formControlName="telephone" name="telephone" class="form-control" placeholder="telephone" required>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                            <input id="email" type="email"  formControlName="email" name="email" class="form-control" placeholder="email" required>
+                          </div>
+                        
+                          <div class="form-group">
+                            <input id="adress" type="text"  formControlName="adress" name="adress" class="form-control" placeholder="adress" required>
+                          </div>
+                          <div class="form-group">
+                            <input id="dateOfBirth" type="date"  formControlName="dateOfBirth" name="dateOfBirth" class="form-control" placeholder="dateOfBirth" required>
+                        
+                        </div>
+                       
+                        <div class="form-group">
+                        <input  id ="file1" type='file' name="file" (change)="recuperFile($event)"  class="form-control"  formControlName="photo"/> 
+                 
+                       </div>
+                       <div class="form-group">
+                                <input id="password" type="password" name="password"  formControlName="password" class="form-control" placeholder="Password" required>
+                           
+                            </div>
+                            
+                       
+                        <div class="row">
+                          <div class="col-md-12 form-group">
+                            <input [disabled]="!form.valid" type="submit" value="Envoyer" style="padding: 8px;
+                            margin: 20px;
+                            border-radius: 26px;
+                            color: white;
+                            background-color: #0E693D;
+                            width: 226px;">
+                          </div>
+                        </div>
+              
+                        <div>
+                          
+                        </div>
+                      </form>
+
+
+
+
+            </div>
+          </div>
+
+         </div></div>
+    </div>
+  </div>
+
+
+
+</div>
